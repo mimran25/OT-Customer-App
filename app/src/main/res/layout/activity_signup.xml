@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signupActivity"
+    android:orientation="vertical"
+    android:background="@color/orange">
+
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:liftOnScroll="true">
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/orange"
+            app:layout_anchor="@+id/appBarLayout"
+            app:layout_anchorGravity="center"
+            app:navigationIcon="@drawable/arrow_back"
+            app:navigationIconTint="@color/white"
+            app:title="Orange Traders - Sign up"
+            app:titleTextColor="@color/white" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:layout_gravity="center"
+        app:endIconMode="clear_text"
+        tools:ignore="HardcodedText">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:backgroundTint="@color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/firstName"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:hint="Enter First Name"
+        android:layout_gravity="center"
+        app:endIconMode="clear_text"
+        tools:ignore="HardcodedText">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/firstNameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lastName"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Last Name"
+        android:layout_gravity="center"
+        app:endIconMode="clear_text"
+        tools:ignore="HardcodedText">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lastNameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userName"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Username"
+        android:layout_gravity="center"
+        app:endIconMode="clear_text"
+        tools:ignore="HardcodedText">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userNameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:layout_gravity="center"
+        app:endIconMode="password_toggle"
+        tools:ignore="HardcodedText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:inputType="textPassword"
+            android:textColorHint="#DD2C00" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirmPassword"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Confirm Password"
+        android:layout_gravity="center"
+        app:endIconMode="password_toggle"
+        tools:ignore="HardcodedText">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirmPasswordET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/signupBTN"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/orange"
+        android:contentDescription="Sign up"
+        android:onClick="onPressSignup"
+        android:text="Sign up"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:strokeColor="@color/white"
+        app:strokeWidth="@dimen/_2sdp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:text="Sign in for an existing account"
+        tools:ignore="HardcodedText,OnClick"
+        android:onClick="onExisting"
+        android:textColor="@color/white">
+    </TextView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_gravity="center">
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/extended_fab2"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/orange"
+            android:contentDescription="Continue with Google"
+            android:text="Continue with Google"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9ssp"
+            app:icon="@drawable/google_icon"
+            app:iconTint="@color/white"
+            tools:ignore="HardcodedText"
+            app:strokeColor="@color/white"
+            app:strokeWidth="@dimen/_2sdp"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/extended_fab3"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/orange"
+            android:contentDescription="Continue with Facebook"
+            android:text="Continue with Facebook"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9ssp"
+            app:icon="@drawable/facebook_icon"
+            app:iconTint="@color/white"
+            tools:ignore="HardcodedText"
+            app:strokeColor="@color/white"
+            app:strokeWidth="@dimen/_2sdp"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

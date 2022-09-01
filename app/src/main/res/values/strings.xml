@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Orange Traders</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="privacy_policy"><font color="#FF000000">I accept the </font><font color="#ff4605">privacy policy</font></string>
+</resources>

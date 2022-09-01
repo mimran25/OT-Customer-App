@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-orangetraders-dev-153821-authRole",
+      "UnauthRoleArn": "arn:aws:iam::778611935503:role/amplify-orangetraders-dev-153821-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::778611935503:role/amplify-orangetraders-dev-153821-authRole",
+      "Region": "ca-central-1",
+      "DeploymentBucketName": "amplify-orangetraders-dev-153821-deployment",
+      "UnauthRoleName": "amplify-orangetraders-dev-153821-unauthRole",
+      "StackName": "amplify-orangetraders-dev-153821",
+      "StackId": "arn:aws:cloudformation:ca-central-1:778611935503:stack/amplify-orangetraders-dev-153821/b83c2f00-22cf-11ed-a3f3-067d75fa448e",
+      "AmplifyAppId": "d337dngq9k1olv"
+    },
+    "categories": {
+      "auth": {
+        "orangetraders899e53fc": {}
+      }
+    }
+  }
+}

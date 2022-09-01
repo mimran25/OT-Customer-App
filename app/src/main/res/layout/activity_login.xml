@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context=".loginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:src="@drawable/white_logo"
+            tools:ignore="ContentDescription">
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_220sdp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="@dimen/_10sdp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/userName"
+                    android:layout_width="@dimen/_225sdp"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:layout_gravity="center"
+                    tools:ignore="HardcodedText">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/userNameET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:backgroundTint="@color/white" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/password"
+                    android:layout_width="@dimen/_225sdp"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:layout_gravity="center"
+                    app:endIconMode="password_toggle"
+                    tools:ignore="HardcodedText">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/passwordET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:backgroundTint="@color/white"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                        android:id="@+id/loginBTN"
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:onClick="onPressLogin"
+                        android:layout_margin="16dp"
+                        android:backgroundTint="@color/orange"
+                        android:contentDescription="Login"
+                        android:text="Login"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        tools:ignore="HardcodedText" />
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+                <TextView
+                    android:id="@+id/forgotPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Forgot Password?"
+                    android:textColor="@color/orange"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="10sp"
+                    tools:ignore="HardcodedText">
+                </TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/noAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:onClick="onSignUpPressed"
+            android:text="SIGN UP FOR AN ACCOUNT"
+            tools:ignore="HardcodedText">
+        </TextView>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_40sdp">
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/extended_fab2"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_margin="16dp"
+                android:backgroundTint="@color/orange"
+                android:contentDescription="Continue with Google"
+                android:text="Continue with Google"
+                app:strokeColor="@color/white"
+                app:strokeWidth="@dimen/_2sdp"
+                android:textAlignment="center"
+                android:textSize="@dimen/_9ssp"
+                android:textColor="@color/white"
+                app:icon="@drawable/google_icon"
+                app:iconTint="@color/white"
+                tools:ignore="HardcodedText" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/extended_fab3"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_margin="16dp"
+                android:backgroundTint="@color/orange"
+                android:contentDescription="Continue with Facebook"
+                android:text="Continue with Facebook"
+                android:textAlignment="center"
+                android:textSize="@dimen/_9ssp"
+                android:textColor="@color/white"
+                app:icon="@drawable/facebook_icon"
+                app:iconTint="@color/white"
+                app:strokeColor="@color/white"
+                app:strokeWidth="@dimen/_2sdp"
+                tools:ignore="HardcodedText" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <ProgressBar
+            android:id="@+id/idLoadingPB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

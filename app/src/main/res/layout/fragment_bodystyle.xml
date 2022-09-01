@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bodystyleFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/ic_baseline_chevron_left_24"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:tint="@color/white"
+            tools:ignore="ContentDescription">
+        </ImageView>
+
+        <SearchView
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_corners"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search used cars"
+            android:backgroundTint="@color/white">
+        </SearchView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/favourites"
+            android:layout_marginHorizontal="4.5dp"
+            android:layout_marginTop="@dimen/_18sdp"
+            tools:ignore="ContentDescription">
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginStart="@dimen/_8sdp">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maker"
+            app:chipMinTouchTargetSize="@dimen/_50sdp"
+            tools:ignore="HardcodedText">
+        </com.google.android.material.chip.Chip>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model"
+            app:chipMinTouchTargetSize="@dimen/_50sdp"
+            tools:ignore="HardcodedText">
+        </com.google.android.material.chip.Chip>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year"
+            app:chipMinTouchTargetSize="@dimen/_50sdp"
+            tools:ignore="HardcodedText">
+        </com.google.android.material.chip.Chip>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Body Style"
+            app:chipMinTouchTargetSize="@dimen/_50sdp"
+            tools:ignore="HardcodedText">
+        </com.google.android.material.chip.Chip>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>

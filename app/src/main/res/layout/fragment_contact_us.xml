@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".contactUsFragment">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:liftOnScroll="true">
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/orange"
+            app:layout_anchor="@+id/appBarLayout"
+            app:layout_anchorGravity="center"
+            app:navigationIcon="@drawable/ic_baseline_chevron_left_24"
+            app:navigationIconTint="@color/white"
+            app:titleMarginEnd="@dimen/_1sdp"
+            app:title="Contact Us"
+            app:titleTextColor="@color/white" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <EditText
+        android:id="@+id/firstName"
+        android:padding="@dimen/_10sdp"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:hint="Enter your first name"
+        android:background="@drawable/edit_text_filelds"
+        tools:ignore="Autofill,HardcodedText,LabelFor,TextFields">
+    </EditText>
+
+    <EditText
+        android:id="@+id/lastName"
+        android:padding="@dimen/_10sdp"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:hint="Enter your last name"
+        android:background="@drawable/edit_text_filelds"
+        tools:ignore="Autofill,HardcodedText,LabelFor,TextFields">
+    </EditText>
+
+    <EditText
+        android:id="@+id/email"
+        android:padding="@dimen/_10sdp"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:hint="username@email.com"
+        android:background="@drawable/edit_text_filelds"
+        tools:ignore="Autofill,HardcodedText,LabelFor,TextFields">
+    </EditText>
+
+    <EditText
+        android:id="@+id/phoneNo"
+        android:padding="@dimen/_10sdp"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:hint="Enter your Phone number"
+        android:background="@drawable/edit_text_filelds"
+        tools:ignore="Autofill,HardcodedText,LabelFor,TextFields">
+    </EditText>
+
+    <EditText
+        android:id="@+id/message"
+        android:padding="@dimen/_10sdp"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:hint="Message"
+        android:background="@drawable/edit_text_filelds"
+        tools:ignore="Autofill,HardcodedText,LabelFor,TextFields">
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_7sdp">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </CheckBox>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/privacy_policy">
+        </TextView>
+    </LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_gravity="center">
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/extended_fab2"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/orange"
+            android:contentDescription="Submit"
+            android:text="Send"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>
